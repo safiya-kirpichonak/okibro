@@ -1,0 +1,12 @@
+:root {
+  --blue-color: #505add;
+  --pink-color: #df42b1;
+}
+
+.blue-bg {
+  background-color: var(--blue-color);
+}
+
+.pink-bg {
+  background-color: var(--pink-color);
+}

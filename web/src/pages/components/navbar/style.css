@@ -1,0 +1,8 @@
+.logo-a-color {
+  color: white;
+  font-size: 28px !important;
+}
+
+.logo-a-color:hover {
+  color: #df42b1 !important;
+}

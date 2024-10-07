@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name     String
+  password String
+  email    String @unique
+
+  refreshToken   String?
+  managementLink String?
+  imageURL       String?
+  isActive       Boolean @default(false)
+  credits        Int     @default(100)
+
+  roleId  String
+  role    Role     @relation(fields: [roleId], references: [id])
+  lessons Lesson[]
+
+  @@map("users")
+}
+
+model Role {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name String @unique
+
+  users User[]
+
+  @@map("roles")
+}
+
+model Lesson {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  status   String
+  history  Json   @default("[]")
+  settings Json   @default("{}")
+
+  userId            String
+  lessonStructureId Int
+  user              User            @relation(fields: [userId], references: [id])
+  lessonStructure   LessonStructure @relation(fields: [lessonStructureId], references: [id])
+
+  @@map("lessons")
+}
+
+model Prompt {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  content String
+  code    String @unique
+
+  @@map("prompts")
+}
+
+model LessonStructure {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name      String @unique
+  credits   Int    @default(0)
+  structure Json   @default("[]")
+
+  lessons Lesson[]
+
+  @@map("lessonStructures")
+}

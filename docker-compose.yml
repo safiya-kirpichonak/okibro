@@ -1,0 +1,75 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginx
+    depends_on:
+      - web
+      - api
+    restart: always
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    ports:
+      - '80:80'
+    env_file:
+      - .env
+  web:
+    container_name: web
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    environment:
+      - REACT_APP_API_URL=${REACT_APP_API_URL}
+    env_file:
+      - .env
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      - PORT=${PORT}
+      - CLIENT_URL=${CLIENT_URL}
+
+      - DATABASE_URL=${DATABASE_URL}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+
+      - OPENAI_TRANSCRIPT_KEY=${OPENAI_TRANSCRIPT_KEY}
+      - OPENAI_URL=${OPENAI_URL}
+
+      - GOOGLE_CLOUD_FILE=${GOOGLE_CLOUD_FILE}
+      - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
+      - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
+
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+
+      - DEFAULT_ROLE=${DEFAULT_ROLE}
+
+      - ADMIN_NAME=${ADMIN_NAME}
+      - ADMIN_EMAIL=${ADMIN_EMAIL}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD}
+
+      - STUDENT_NAME=${STUDENT_NAME}
+      - STUDENT_EMAIL=${STUDENT_EMAIL}
+      - STUDENT_PASSWORD=${STUDENT_PASSWORD}
+
+      - REGION_S3=${REGION_S3}
+      - BUCKET_S3=${BUCKET_S3}
+      - BUCKET_TEST_S3=${BUCKET_TEST_S3}
+      - ACCESS_KEY_S3=${ACCESS_KEY_S3}
+      - SECRET_ACCESS_KEY_S3=${SECRET_ACCESS_KEY_S3}
+
+      - CLIENT_URL_EMAIL=${CLIENT_URL_EMAIL}
+      - OKIBRO_EMAIL_PASSWORD=${OKIBRO_EMAIL_PASSWORD}
+      - OKIBRO_EMAIL_ADDRESS=${OKIBRO_EMAIL_ADDRESS}
+      - SMTP_SERVER=${SMTP_SERVER}
+      - IMAP_SERVER=${IMAP_SERVER}
+      - SMTP_PORT=${SMTP_PORT}
+      - IMAP_PORT=${IMAP_PORT}
+
+      - DSN_SENTRY=${DSN_SENTRY}
+    env_file:
+      - .env

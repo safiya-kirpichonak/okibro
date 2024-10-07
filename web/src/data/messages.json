@@ -1,0 +1,8 @@
+{
+  "continue-speak": "Please, continue to speak with Okibro!",
+  "audio-permission-error": "Click to continue or allow browser to play audio.",
+  "not-enough-credits": "You do not have enough credits to start this lesson. Please buy more credits.",
+  "exit-lesson-confirmation": "Are you sure you want to finish your lesson? Credits for the current lesson will be deducted anyway.",
+  "start-new-lesson-confirmation": "Are you sure you want to start a new lesson? Credits for the current lesson will be deducted anyway.",
+  "internal-server-error": "Oh no, I feel bad and I can’t answer you now. Please reload the page and I’ll probably feel better. If not, please ask for support."
+}

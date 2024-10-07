@@ -1,0 +1,34 @@
+[
+  {
+    "countMessage": "1 credit",
+    "priceMessage": "PAY $10 USD",
+    "message": "for 1 credit, you will get a 45-minute lesson with AI",
+    "timeMessage": "one 45 minutes class",
+    "featuresMessage": "all features included",
+    "emailMessage": "lesson Summary on email"
+  },
+  {
+    "countMessage": "8 credits",
+    "priceMessage": "PAY $70 USD",
+    "message": "for 1 credit, you will get a 45-minute lesson with AI",
+    "timeMessage": "eight 45 minutes classes",
+    "featuresMessage": "all features included",
+    "emailMessage": "lesson Summary on email"
+  },
+  {
+    "countMessage": "20 credits",
+    "priceMessage": "PAY $190 USD",
+    "message": "for 1 credit, you will get a 45-minute lesson with AI",
+    "timeMessage": "twenty 45 minutes class",
+    "featuresMessage": "all features included",
+    "emailMessage": "lesson Summary on email"
+  },
+  {
+    "countMessage": "free 5 minutes test",
+    "priceMessage": "PAY $190 USD",
+    "message": "get a free 5-minute trial lesson to familiarize yourself with the features of the online learning platform.",
+    "timeMessage": "5 minutes class",
+    "featuresMessage": "all features included",
+    "emailMessage": "lesson Summary on email"
+  }
+]

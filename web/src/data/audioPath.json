@@ -1,0 +1,48 @@
+{
+  "loadingAudio": [
+    {
+      "words": "I need a moment...",
+      "path": "./theme/audio/i-need-a-moment.mp3"
+    },
+    {
+      "words": "Hmm, let's see...",
+      "path": "./theme/audio/hmm-lets-see.mp3"
+    },
+    {
+      "words": "Hm...",
+      "path": "./theme/audio/hmm.mp3"
+    },
+    {
+      "words": "One second...",
+      "path": "./theme/audio/one-second.mp3"
+    }
+  ],
+  "infinity-conversation-lesson-introduction": {
+    "words": "Welcome to 'Infifnity conversation' class! Today, We'll speak on topics You choose and improve your grammar and conversation. Each 2 minutes I will interrupt You for fixing your grammar. Let's go!",
+    "path": "./theme/audio/infinity-conversation-lesson-introduction.mp3"
+  },
+  "phrasal-verbs-lesson-introduction": {
+    "words": "Welcome to the class! We're focusing on phrasal verbs today. For the first 5 minutes, you'll repeat after me as I introduce each phrasal verb. In the next 5 minutes, you'll be creating sentences with these verbs. Ready? Let's begin!",
+    "path": "./theme/audio/phrasal-verbs-lesson-introduction.mp3"
+  },
+  "wise-proverbs-lesson-introduction": {
+    "words": "Welcome to the class! Our focus today is on wise proverbs. In the first 5 minutes, I'll introduce a proverb, and you'll repeat it. Then, in the next 5 minutes, you'll create sentences using these proverbs. Ready to get started? Let's go!",
+    "path": "./theme/audio/wise-proverbs-lesson-introduction.mp3"
+  },
+  "universal-expressions-lesson-introduction": {
+    "words": "Welcome to the class! Today, we're diving into universal expressions. For the first 5 minutes, you'll repeat each expression after me. Afterwards, you'll have 5 minutes to form sentences with these expressions. Are you ready? Let's begin!",
+    "path": "./theme/audio/universal-expressions-lesson-introduction.mp3"
+  },
+  "grammar-errors-reviewing": {
+    "words": "Sorry for interrupting you, but I have a few grammar notes. Let's fix them and proceed.",
+    "path": "./theme/audio/reviewing.mp3"
+  },
+  "summarizing": {
+    "words": "I'm truly sorry, but our class has ended for today. I eagerly look forward to our next meeting. Until then, take care and goodbye with all my best wishes!",
+    "path": "./theme/audio/summarizing.mp3"
+  },
+  "reviewing": {
+    "words": "Sorry for interrupting you, but I have a few grammar notes. Let's fix them and proceed.",
+    "path": "./theme/audio/reviewing.mp3"
+  }
+}
