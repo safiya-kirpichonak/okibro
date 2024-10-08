@@ -3,7 +3,7 @@
   "name": "okibro",
   "version": "1.0.0",
   "license": "UNLICENSED",
-  "author": "trudy418 && Alex Dent",
+  "author": "Sofia K. && Alex Dent",
   "description": "Application to learn English.",
   "scripts": {
     "build": "nest build",

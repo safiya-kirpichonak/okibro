@@ -2,7 +2,6 @@ import React from "react";
 
 import {
   PROFILE_ROUTE,
-  WALLET_ROUTE,
   PHRASAL_VERBS_LESSON_ROUTE,
   WISE_PROVERBS_LESSON_ROUTE,
   UNIVERSAL_EXPRESSIONS_ROUTE,
@@ -10,7 +9,6 @@ import {
 } from "./const";
 import LessonPage from "../pages/student/lesson-page";
 import ProfilePage from "../pages/student/profile-page";
-// import WalletPage from "../pages/student/wallet-page";
 
 export const studentRoutes = [
   {

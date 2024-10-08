@@ -2,6 +2,7 @@
   "name": "web",
   "version": "1.0.0",
   "private": true,
+  "author": "Sofia K. && Alex Dent",
   "dependencies": {
     "@react-oauth/google": "^0.12.1",
     "@testing-library/jest-dom": "^5.17.0",

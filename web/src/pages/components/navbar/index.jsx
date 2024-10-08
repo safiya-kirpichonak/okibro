@@ -10,7 +10,6 @@ import {
   REPORT_ROUTE,
   ROLES_ROUTE,
   USERS_ROUTE,
-  WALLET_ROUTE,
 } from "../../../routes/const.js";
 import MainButton from "../main-button/index.jsx";
 import AuthService from "../../../services/AuthService.js";
@@ -114,9 +113,6 @@ const NavBar = ({ role }) => {
                     <li>
                       <a href={PROFILE_ROUTE}>Profile</a>
                     </li>
-                    {/* <li>
-                      <a href={WALLET_ROUTE}>Wallet</a>
-                    </li> */}
                     <li>
                       <a id="logout-link" onClick={onClickLogOut}>
                         LOG OUT

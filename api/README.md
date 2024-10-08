@@ -2,7 +2,7 @@
 
 The server side of the site for learning English with AI.
 
-## Installation
+## Local running
 
 Use Node.js (^18.0.0), npm (^8.0.0) and Docker.
 
@@ -12,7 +12,7 @@ Use Node.js (^18.0.0), npm (^8.0.0) and Docker.
 npm ci
 ```
 
-2. Ask me about env.txt file and rename it to .env and save in the api folder.
+2. Rename "env.example.txt" => .env and fill it with your data.
 
 3. Now lets create database. Run this command to run database:
 
@@ -32,7 +32,7 @@ Run seeds:
 npm run db:run:seeds
 ```
 
-4. Run:
+4. Run application:
 
 ```
 npm run dev
